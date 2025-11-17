@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body bgcolor="#F9629F">
+  <div class="container">
+    <header class="form-header">
+        <div align="center">
+      <h1>Student Registration Form</h1> </div></header> 
+    </header>
+
+    <form class="form">
+
+      <div class="form-row two-col">
+        <div class="form-field">
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" placeholder="Enter first name" />
+        </div>
+
+        <div class="form-field">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" placeholder="Enter last name" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label>Date of Birth</label>
+          <div class="dob-row">
+            <select name="dob-day" aria-label="Day">
+              <option value="">Day</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+
+            <select name="dob-month" aria-label="Month">
+              <option value="">Month</option>
+              <option>January</option><option>February</option><option>March</option>
+              <option>April</option><option>May</option><option>June</option>
+              <option>July</option><option>August</option><option>September</option>
+              <option>October</option><option>November</option><option>December</option>
+            </select>
+
+            <select name="dob-year" aria-label="Year">
+              <option value="">Year</option>
+              <option>2025</option><option>2024</option><option>2023</option>
+              <option>2022</option><option>2021</option><option>2020</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="form-row two-col">
+        <div class="form-field">
+          <label for="email">Email ID</label>
+          <input type="email" placeholder="Enter email address" />
+        </div>
+
+        <div class="form-field">
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" placeholder="Enter 10-digit mobile number" />
+        </div>
+      </div>
+
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label>Gender</label>
+          <div class="inline-group">
+            <label class="inline-label">
+                <input type="radio" name="gender"/> Male</label>
+            <label class="inline-label">
+                <input type="radio" name="gender"/> Female</label>
+            <label class="inline-label">
+                <input type="radio" name="gender"/> Other</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label for="address">Address</label>
+          <textarea placeholder="Enter your full address"></textarea>
+        </div>
+      </div>
+
+ 
+      <div class="form-row three-col">
+        <div class="form-field">
+          <label >City</label>
+          <input type="text" placeholder="City" />
+        </div>
+
+        <div class="form-field">
+          <label for="pin">PIN Code</label>
+          <input type="text" placeholder="PIN code" />
+        </div>
+
+        <div class="form-field">
+          <label>State</label>
+          <input type="text" placeholder="State" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="">Select country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label>Hobbies</label>
+          <div class="inline-group wrap">
+            <label class="inline-label"><input type="checkbox"/> Drawing</label>
+            <label class="inline-label"><input type="checkbox"/> Sketching</label>
+            <label class="inline-label"><input type="checkbox"/> Singing</label>
+            <label class="inline-label"><input type="checkbox"/> Dancing</label>
+            <label class="inline-label"><input type="checkbox"/> Others</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <h3 class="section-title">Qualification</h3>
+        <table class="qual-table" aria-label="Qualification table">
+          <thead>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year of Passing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field full-width">
+          <label>Courses Applied For</label>
+          <div class="inline-group">
+            <label class="inline-label"><input type="radio"/> BCA</label>
+            <label class="inline-label"><input type="radio"/> B.Com</label>
+            <label class="inline-label"><input type="radio"/> B.Sc</label>
+            <label class="inline-label"><input type="radio" /> B.A</label>
+          </div>
+        </div>
+      </div>
+<br><br>
+     
+      <div class="form-row">
+        <div class="button-row">
+          <button type="reset" class="btn btn-secondary">Reset</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
+
